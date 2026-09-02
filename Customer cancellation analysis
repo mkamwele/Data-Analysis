@@ -1,141 +1,31 @@
-Maven Communications — Customer Churn Analysis
-Project Overview
-
-This project analyzes customer churn for Maven Communications, a California-based telecommunications company.
-
-The goal of the analysis was to understand why customers are leaving, which customer groups are most likely to churn, and what Maven Communications can do to improve customer retention.
-
-Objectives
-Calculate the overall customer churn rate
-Analyze churn across different customer characteristics
-Identify high-risk customer groups
-Identify the most common reasons customers churn
-Analyze revenue associated with churn
-Cross-reference high-risk groups with churn reasons
-Develop business recommendations based on the findings
-Tools & Technologies
-Python
-Pandas — data cleaning and analysis
-Matplotlib — data visualization
-Seaborn — data visualization
-Jupyter Notebook
-Analysis
-1. Overall Churn
-
-Calculated the proportion of customers who have churned compared with the total customer base.
-
-2. Churn by Customer Characteristics
-
-Analyzed churn rates across variables including:
-
-Contract type
-Tenure
-Age
-Internet service
-Internet type
-Offers
-Online security
-Online backup
-Device protection
-Premium tech support
-Streaming services
-Unlimited data
-Payment method
-3. High-Risk Customer Groups
-
-Several customer groups showed particularly high churn rates.
-
-Some of the highest-risk groups identified were:
-
-Customer Group	Churn Rate
-Tenure: 0–6 months + Month-to-Month contract	57.06%
-Offer E	52.92%
-Month-to-Month contract	45.84%
-Age 66+	41.86%
-Online Security: No	41.77%
-Premium Tech Support: No	41.64%
-Fiber Optic	40.72%
-Online Backup: No	39.93%
-Device Protection Plan: No	39.13%
-Payment Method: Mailed Check	36.88%
-4. Churn Reasons
-
-The most common reasons reported by churned customers included:
-
-Competitor had better devices — 313 customers
-Competitor made better offer — 311 customers
-Attitude of support person — 220 customers
-Don't know — 130 customers
-Competitor offered more data — 117 customers
-Competitor offered higher download speeds — 100 customers
-
-The findings suggest that competition, pricing/value, devices, and customer support are important areas for Maven to investigate.
-
-5. High-Risk Segment Analysis
-
-A deeper analysis was performed on customers with both:
-
-Month-to-Month contracts
-0–6 months of tenure
-
-This group had a 57.06% churn rate.
-
-Among churned customers in this segment, the most common reported reasons were:
-
-Competitor made a better offer — 18.72%
-Competitor had better devices — 18.08%
-Attitude of support person — 10.51%
-
-This suggests that early-tenure month-to-month customers may be an important group for targeted retention efforts.
-
-Key Insights
-
-The analysis suggests that Maven Communications should pay particular attention to:
-
-Customers in their first six months
-Month-to-month customers
-Customers receiving Offer E
-Customers without additional security and support services
-Competitive pricing and device offerings
-Customer service and support experience
 Business Recommendations
 
-Based on the analysis, the following recommendations were developed:
+Based on the customer churn analysis, Maven Communications should focus its retention strategy on customers who show the highest risk of churn and address the main reasons customers report for leaving.
 
-Create an early-retention program for new month-to-month customers.
-Review Offer E and investigate why it has such a high churn rate.
-Improve competitive value by reviewing pricing, devices, data allowances, and download speeds.
-Strengthen customer support through training and improved technical assistance.
-Develop churn-risk monitoring to identify high-risk customers and prioritize retention efforts.
-Conclusion
+1. Target new month-to-month customers with early retention offers
 
-The analysis identified several customer segments with substantially higher churn rates and highlighted competition, customer support, and early customer tenure as important areas for Maven Communications to address.
+Customers with month-to-month contracts and 0–6 months of tenure had a churn rate of 57.06%, making this one of the highest-risk customer segments identified. Among these churned customers, the most common reasons were that competitors made better offers (18.72%) and had better devices (18.08%).
 
-The findings can help Maven focus retention efforts on the customers most at risk rather than applying the same strategy across the entire customer base.
+Recommendation: Maven Communications should introduce an early-retention program for new month-to-month customers. This could include competitive introductory offers, device promotions, and proactive check-ins during the first six months.
 
-Project Structure
-Maven-Customer-Churn-Analysis/
-│
-├── data/
-│   └── customer_data.csv
-│
-├── notebooks/
-│   └── Customer_Cancellation_Analysis.ipynb
-│
-├── visualizations/
-│   └── ...
-│
-├── README.md
-└── requirements.txt
-Skills Demonstrated
-Data cleaning
-Exploratory Data Analysis (EDA)
-Pandas
-Data visualization
-Groupby analysis
-Pivot tables
-Churn rate analysis
-Customer segmentation
-Revenue analysis
-Business analysis
-Data-driven recommendations
+2. Review Offer E and improve its value proposition
+
+Offer E had the highest overall churn rate at 52.92%. This suggests that customers receiving this offer are particularly vulnerable to cancellation.
+
+Recommendation: Maven should investigate why Offer E customers are leaving and compare the offer's pricing, services, and benefits with competing offers. The company should consider redesigning Offer E or providing customers with a more attractive alternative before they churn.
+
+3. Address competitive threats involving devices, pricing, and data
+
+The most common churn reasons were "Competitor had better devices" (313 customers) and "Competitor made better offer" (311 customers). Other important competitive reasons included competitors offering more data (117 customers) and higher download speeds (100 customers).
+
+Recommendation: Maven should regularly benchmark its device selection, pricing, data allowances, and download speeds against competitors. Improving these areas could make Maven's offerings more competitive and reduce customers' incentives to switch providers.
+
+4. Strengthen customer support and technical assistance
+
+A significant number of customers reported "Attitude of support person" (220 customers) and "Attitude of service provider" (94 customers) as reasons for leaving. In addition, customers without Online Security, Premium Tech Support, Online Backup, and Device Protection Plan had relatively high churn rates.
+
+Recommendation: Maven should invest in customer-support training and evaluate the quality of its technical-support experience. The company could also proactively offer relevant support services to customers in high-risk segments.
+
+5. Develop a churn-risk monitoring system
+
+The analysis identified several high-risk characteristics, including month-to-month contracts, short tenure, Offer E, lack of Online Security, lack of Premium Tech Support, and Fiber Optic customers.
